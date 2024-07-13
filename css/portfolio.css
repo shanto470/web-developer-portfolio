@@ -170,15 +170,38 @@ footer textarea {
   width: 50%;
 }
 /* media query */
-.hide {
-  display: none;
-}
+
 @media screen and (max-width: 576px) {
   .skill-container,
   .resume-container,
   footer,
-  .about-items {
+  .about-items,
+  .banner,
+  nav ul,
+  nav {
     flex-direction: column;
+  }
+  .banner-pro-pic {
+    width: 100%;
+  }
+  .banner {
+    margin: 20px;
+  }
+  nav > ul {
+    gap: 20px;
+  }
+  nav > h1 {
+    margin-left: 70px;
+  }
+  nav {
+    justify-content: start;
+    margin: 0px;
+  }
+  .developer {
+    background-image: none;
+  }
+  .banner-content {
+    max-width: 100%;
   }
   footer,
   .about {
